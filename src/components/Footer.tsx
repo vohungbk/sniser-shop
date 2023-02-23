@@ -39,7 +39,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="mb-[30px] pl-10 hidden sm:block">
+            <div className="mb-[30px] pl-0 sm:pl-10">
               <h3 className="font-semibold text-white mb-5">Site links</h3>
               <ul className="pl-0 mb-0">
                 {siteLinks?.map((item, index) => (
@@ -49,7 +49,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="mb-[30px] pl-5 hidden sm:block">
+            <div className="mb-[30px] pl-0 sm:pl-5">
               <h3 className="font-semibold text-white mb-5">Corporate Information</h3>
               <ul className="pl-0 mb-0">
                 {corporateInformation?.map((item, index) => (

@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="sm:pl-[80px] px-4 py-3 bg-[#000000] text-white text-[12px] font-normal sm:font-medium sm:leading-3 leading-[15px]">
+      <div className="sm:pl-[80px] px-4 py-3 bg-[#000000] text-white text-[12px] font-normal sm:font-medium sm:leading-3 leading-[15px] text-center">
         Investing in crypto assets comes with <span className="text-primary-color font-bold">a high degree of risk</span>. Only invest an amount that you can
         accept a total loss of. Always be cautious of promised returns that sound too good to be true.
       </div>
@@ -60,7 +60,7 @@ const Home = () => {
         <div className="font-[800] text-[24px] leading-[29px] sm:text-[42px] sm:leading-[42px] text-[#333333] sm:text-secondary-color mb-[25px] sm:mb-0">
           Explore Our Collection of NFTs
         </div>
-        <a className="flex items-center gap-5 cursor-pointer font-bold" href="https://sniser.com/shop">
+        <a className="flex items-center gap-5 cursor-pointer font-bold" href="https://shop.sniser.com/">
           <span>See More</span>
           <img src="assets/images/arrow-forward.svg" alt="" />
         </a>
@@ -93,10 +93,10 @@ const Home = () => {
         </div>
       </div>
       <div
-        className="bg-secondary-color py-[46px] text-primary-color font-[800] sm:text-[42px] text-[24px] leading-6 sm:leading-[42px] text-center cursor-pointer pr-6 sm:pr-[60px] flex sm:block justify-around items-center"
+        className="bg-secondary-color py-[46px] text-primary-color font-[800] sm:text-[42px] text-[24px] leading-6 sm:leading-[42px] text-center cursor-pointer pr-6 sm:pr-[60px] flex justify-between items-center"
         onClick={() => setShowShowSniserWork(!showShowSniserWord)}
       >
-        How Sniser Works
+        <p className="flex-1">How Sniser Works</p>
         <img
           src={`${showShowSniserWord ? "assets/images/arrow-ios-downward.svg" : "assets/images/arrow-ios-downward-green.svg"}`}
           className="float-right sm:ml-[60px]"
@@ -150,10 +150,10 @@ const Home = () => {
         </div>
       )}
       <div
-        className="bg-primary-color py-[46px] text-secondary-color font-[800] text-[24px] sm:text-[42px] leading-6 sm:leading-[42px] cursor-pointer sm:pr-[60px] flex sm:block justify-around items-center text-center"
+        className="bg-primary-color py-[46px] text-secondary-color font-[800] text-[24px] sm:text-[42px] leading-6 sm:leading-[42px] cursor-pointer sm:pr-[60px] flex justify-between items-center text-center"
         onClick={() => setIsShowBenefit(!isShowBenefit)}
       >
-        Benefits of purchasing our NFTs
+        <p className="flex-1"> Benefits of purchasing our NFTs</p>
         <img
           src={`${isShowBenefit ? "assets/images/arrow-ios-up-outline.svg" : "assets/images/arrow-ios-downward-outline.svg"}`}
           className="float-right sm:ml-[60px] mr-5 sm:mr-0"

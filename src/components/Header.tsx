@@ -7,10 +7,11 @@ const Header = () => {
 
   return (
     <header className="p-4 sm:px-[80px] sm:py-[28px] bg-white flex justify-between items-center">
-      <img src="assets/images/logo.svg" alt="" className="cursor-pointer hidden sm:block" />
-      <img src="assets/images/logo-mobile.svg" alt="" className="cursor-pointer sm:hidden" />
+      <img src="assets/images/logo.png" alt="" className="cursor-pointer w-[150px] sm:w-[200px]" />
       <div className="items-center gap-10 hidden sm:flex">
-        <p className="text-secondary">Content</p>
+        <a href="https://shop.sniser.com/">
+          <p className="text-secondary-color">Content</p>
+        </a>
         <button
           className="flex items-center gap-3 bg-primary-color border border-solid border-[#333333] rounded-[30px] py-[18px] px-5"
           onClick={() => setIsOpen(true)}
@@ -30,7 +31,9 @@ const Header = () => {
             <img src="assets/images/wallet-solid.svg" alt="" />
             <span className="leading-4">Connect Wallet</span>
           </button>
-          <p className="text-white">Content</p>
+          <a href="https://shop.sniser.com/">
+            <p className="text-white">Content</p>
+          </a>
         </nav>
       )}
       <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)} />
