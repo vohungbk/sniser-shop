@@ -1,5 +1,38 @@
 const Footer = () => {
-  const siteLinks = ["Homepage", "How it works", "Artist service", "FAQs", "About Us", "Contact Us", "Nft Shop Signup", "Sitemap"];
+  const siteLinks = [
+    {
+      name: "Homepage",
+      link: "/",
+    },
+    {
+      name: "How it works",
+      link: "https://sniser.com/artist-join",
+    },
+    {
+      name: "Artist service",
+      link: "https://sniser.com/artist-service/",
+    },
+    {
+      name: "FAQs",
+      link: "https://sniser.com/faq/",
+    },
+    {
+      name: "About Us",
+      link: "https://sniser.com/about-us/",
+    },
+    {
+      name: "Contact Us",
+      link: "https://sniser.com/contact-us/",
+    },
+    {
+      name: "Nft Shop Signup",
+      link: "/",
+    },
+    {
+      name: "Sitemap",
+      link: "/",
+    },
+  ];
   const corporateInformation = [
     "SNISER LTD",
     "3RD Floor",
@@ -17,11 +50,11 @@ const Footer = () => {
           <div className="grid sm:grid-cols-6 lg:grid-cols-3">
             <div className="mb-[30px]">
               <div className="mb-4">
-                <a href="https://sniser.com/" className="font-bold text-[28px] leading-[28px] text-white">
-                  <span className="text-primary-color">S</span>niser
+                <a href="https://sniser.com/" className="font-bold text-[27px] leading-[28px] text-white">
+                  <span className="text-primary-color">S</span>NISER
                 </a>
               </div>
-              <div className="mb-5 text-white font-medium text-[14px] leading-[21px] max-w-[296px]">
+              <div className="mb-5 text-white font-bold text-[17px] leading-[21px] max-w-max sm:max-w-[296px]">
                 Sniser provides an innovative solution to protect artist creativity using blockchain technology
               </div>
               <ul className="mb-0 mt-5 p-0">
@@ -40,21 +73,23 @@ const Footer = () => {
               </ul>
             </div>
             <div className="mb-[30px] pl-0 sm:pl-10">
-              <h3 className="font-semibold text-white mb-5">Site links</h3>
+              <h3 className="font-semibold text-white mb-5 text-[17px]">Site links</h3>
               <ul className="pl-0 mb-0">
                 {siteLinks?.map((item, index) => (
                   <li className="text-white mb-4" key={index}>
-                    <a className="text-[14px] text-[#BFBFBF] inline-block cursor-pointer hover:text-primary-color">{item}</a>
+                    <a href={item.link} className="text-[13px] inline-block cursor-pointer hover:text-primary-color font-bold">
+                      {item.name}
+                    </a>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="mb-[30px] pl-0 sm:pl-5">
-              <h3 className="font-semibold text-white mb-5">Corporate Information</h3>
+              <h3 className="font-semibold text-white mb-5 text-[17px]">Corporate Information</h3>
               <ul className="pl-0 mb-0">
                 {corporateInformation?.map((item, index) => (
                   <li className="text-white mb-4" key={index}>
-                    <a className="text-[14px] text-[#BFBFBF] inline-block cursor-pointer hover:text-primary-color">{item}</a>
+                    <a className="text-[13px] inline-block cursor-pointer hover:text-primary-color font-bold">{item}</a>
                   </li>
                 ))}
               </ul>

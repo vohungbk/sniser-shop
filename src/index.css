@@ -138,14 +138,14 @@ th {
 
 .slick-next {
   background: url("/public/assets/images/arrow-right.svg") center center no-repeat !important;
-  right: 0 !important;
+  right: -20px !important;
   width: 42px !important;
   height: 48px !important;
 }
 
 .slick-prev {
   background: url("/public/assets/images/arrow-left.svg") center center no-repeat !important;
-  left: 0 !important;
+  left: -20px !important;
   width: 42px !important;
   height: 48px !important;
   z-index: 10;
