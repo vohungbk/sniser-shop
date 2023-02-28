@@ -59,16 +59,24 @@ const Footer = () => {
               </div>
               <ul className="mb-0 mt-5 p-0">
                 <li className="inline-block mr-[25px]">
-                  <img src="assets/images/facebook.svg" alt="" className="cursor-pointer" />
+                  <a href="https://www.facebook.com/snisertrading" target="_blank" rel="noreferrer">
+                    <img src="assets/images/facebook.svg" alt="" className="cursor-pointer w-[42px] h-[42px]" />
+                  </a>
                 </li>
                 <li className="inline-block mr-[25px]">
-                  <img src="assets/images/twitter.svg" alt="" className="cursor-pointer" />
+                  <a href="https://twitter.com/Sniser4" target="_blank" rel="noreferrer">
+                    <img src="assets/images/twitter.svg" alt="" className="cursor-pointer w-[42px] h-[42px]" />
+                  </a>
                 </li>
                 <li className="inline-block mr-[25px]">
-                  <img src="assets/images/linkedin.svg" alt="" className="cursor-pointer" />
+                  <a href="https://www.linkedin.com/in/sniser-ltd-b0a9a6205/" target="_blank" rel="noreferrer">
+                    <img src="assets/images/linkedin.svg" alt="" className="cursor-pointer w-[42px] h-[42px]" />
+                  </a>
                 </li>
                 <li className="inline-block mr-[25px]">
-                  <img src="assets/images/instagram.svg" alt="" className="cursor-pointer" />
+                  <a href="https://www.instagram.com/sniser15/" target="_blank" rel="noreferrer">
+                    <img src="assets/images/instagram.svg" alt="" className="cursor-pointer w-[42px] h-[42px]" />
+                  </a>
                 </li>
               </ul>
             </div>

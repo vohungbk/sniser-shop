@@ -57,53 +57,7 @@ const Home = () => {
       <div className="sm:hidden bg-[url('../public/assets/images/bg-home-mobile.svg')] bg-no-repeat bg-cover py-20 text-white font-[800] text-2xl leading-[150%] text-center">
         Listen, watch, and read exclusive content from talented artists.
       </div>
-      <div className="sm:py-[46px] py-7 px-4 sm:px-0 bg-primary-color flex justify-between items-center text-center sm:pr-[60px]">
-        <div className="flex justify-evenly flex-wrap sm:flex-nowrap text-center flex-1">
-          <div className="font-[800] text-[24px] leading-[29px] sm:text-[42px] sm:leading-[42px] text-[#333333] sm:text-secondary-color mb-0 text-center max-w-[310px] sm:max-w-max">
-            Explore Our Collection of NFTs
-          </div>
-          {/* <a className="flex items-center gap-5 cursor-pointer font-bold mt-4 sm:mt-0" href="https://shop.sniser.com/">
-            <span>See More</span>
-            <img src="assets/images/arrow-forward.svg" alt="" />
-          </a> */}
-        </div>
-
-        <img
-          src={`${isShowNftInfo ? "assets/images/arrow-ios-up-outline.svg" : "assets/images/arrow-ios-downward-outline.svg"}`}
-          className="float-right sm:ml-[60px] cursor-pointer mr-2 sm:mr-0 sm:mb-0"
-          alt=""
-          onClick={() => setIsShowNftInfo(!isShowNftInfo)}
-        />
-      </div>
-      {isShowNftInfo && (
-        <div className="bg-[#F9F9F9] py-20">
-          <div className="xl:max-w-[1250px] lg:max-w-[960px] md:max-w-[720px] w-full mr-auto ml-auto">
-            <Slider {...settings} swipe>
-              {[1, 2, 3, 4, 5].map(() => (
-                <div className="w-full border border-solid border-[#EEEEEE] bg-white">
-                  <img src="assets/images/image17.svg" alt="" className="w-full" />
-                  <div className="mt-[14px] ml-[14px] font-semibold text-[18px] leading-[18px] text-[#0C0C0C]">Podder Special NFT</div>
-                  <div className="ml-[14px] flex items-center mt-3 text-[#0C0C0C]">
-                    <img src="assets/images/image12.svg" alt="" className="mr-2" />
-                    <div className="px-[10px]">40.00</div>
-                    <div>USDT</div>
-                  </div>
-                  <div className="flex mt-3 ml-[14px]">
-                    <div className="bg-[#F8F8F8] rounded-[4px] text-sm font-bold text-[#000000] py-[6px] px-2 mr-[10px]">Book</div>
-                    <div className="bg-[#F8F8F8] rounded-[4px] text-sm font-bold text-[#000000] py-[6px] px-2 mr-[10px]">Film</div>
-                  </div>
-                  <div className="w-full flex cursor-pointer mt-[23px] justify-between">
-                    <div className="bg-primary-color py-4 px-[56px] font-bold text-white rounded-bl-[4px] w-auto flex-1 text-center text-base">Buy Now</div>
-                    <div className="bg-[#385626] py-4 px-[19px] rounded-br-[4px] max-w-[62px]">
-                      <img src="assets/images/shopping-cart-outline.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      )}
+     
 
       <div
         className="bg-secondary-color py-[46px] text-primary-color font-[800] sm:text-[42px] text-[24px] leading-6 sm:leading-[42px] text-center cursor-pointer pr-6 sm:pr-[60px] flex justify-between items-center"
@@ -247,6 +201,53 @@ const Home = () => {
               </tr>
             </tbody>
           </table>
+        </div>
+      )}
+       <div className="sm:py-[46px] py-7 px-4 sm:px-0 bg-primary-color flex justify-between items-center text-center sm:pr-[60px]">
+        <div className="flex justify-evenly flex-wrap sm:flex-nowrap text-center flex-1">
+          <div className="font-[800] text-[24px] leading-[29px] sm:text-[42px] sm:leading-[42px] text-[#333333] sm:text-secondary-color mb-0 text-center max-w-[310px] sm:max-w-max">
+            Explore Our Collection of NFTs
+          </div>
+          {/* <a className="flex items-center gap-5 cursor-pointer font-bold mt-4 sm:mt-0" href="https://shop.sniser.com/">
+            <span>See More</span>
+            <img src="assets/images/arrow-forward.svg" alt="" />
+          </a> */}
+        </div>
+
+        <img
+          src={`${isShowNftInfo ? "assets/images/arrow-ios-up-outline.svg" : "assets/images/arrow-ios-downward-outline.svg"}`}
+          className="float-right sm:ml-[60px] cursor-pointer mr-2 sm:mr-0 sm:mb-0"
+          alt=""
+          onClick={() => setIsShowNftInfo(!isShowNftInfo)}
+        />
+      </div>
+      {isShowNftInfo && (
+        <div className="bg-[#F9F9F9] py-20">
+          <div className="xl:max-w-[1250px] lg:max-w-[960px] md:max-w-[720px] w-full mr-auto ml-auto">
+            <Slider {...settings} swipe>
+              {[1, 2, 3, 4, 5].map(() => (
+                <div className="w-full border border-solid border-[#EEEEEE] bg-white">
+                  <img src="assets/images/image17.svg" alt="" className="w-full" />
+                  <div className="mt-[14px] ml-[14px] font-semibold text-[18px] leading-[18px] text-[#0C0C0C]">Podder Special NFT</div>
+                  <div className="ml-[14px] flex items-center mt-3 text-[#0C0C0C]">
+                    <img src="assets/images/image12.svg" alt="" className="mr-2" />
+                    <div className="px-[10px]">40.00</div>
+                    <div>USDT</div>
+                  </div>
+                  <div className="flex mt-3 ml-[14px]">
+                    <div className="bg-[#F8F8F8] rounded-[4px] text-sm font-bold text-[#000000] py-[6px] px-2 mr-[10px]">Book</div>
+                    <div className="bg-[#F8F8F8] rounded-[4px] text-sm font-bold text-[#000000] py-[6px] px-2 mr-[10px]">Film</div>
+                  </div>
+                  <div className="w-full flex cursor-pointer mt-[23px] justify-between">
+                    <div className="bg-primary-color py-4 px-[56px] font-bold text-white rounded-bl-[4px] w-auto flex-1 text-center text-base">Buy Now</div>
+                    <div className="bg-[#385626] py-4 px-[19px] rounded-br-[4px] max-w-[62px]">
+                      <img src="assets/images/shopping-cart-outline.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       )}
     </>
